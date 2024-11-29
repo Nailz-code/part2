@@ -33,7 +33,6 @@
            
         .greet{
             font-size: 3em;
-          font-family: Arial, Helvetica, sans-serif;
         }
 
         .date {
@@ -98,11 +97,11 @@ function dispalyGreetings(today){
         hrs = today.getHours();
         name="Sisi"
         if (hrs < 12)
-            greet = 'Rise and Shine;
+            greet = 'Rise and Shine  '+name;
         else if (hrs >= 12 && hrs <= 17)
             greet = 'Good Afternoon '+name;
         else if (hrs >= 17 && hrs <= 24)
-            greet = 'Yhu! Bekunini. Hambo lala  '+name;
+            greet = 'Good Evening  '+name;
         document.getElementById('greet').innerHTML = greet;
 
     }
