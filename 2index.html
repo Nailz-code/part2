@@ -8,60 +8,58 @@
     /* General styles */
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
       margin: 0;
       padding: 0;
-      background-color: #ffecf2;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      background-color: #f0f8ff; /* Light blue background */
+    }
+
+    /* Widget container */
+    #widget-container {
+      text-align: center;
+      background-color: #ffffff; /* White background for the widget */
+      border: 3px solid #4b0082; /* Indigo border */
+      border-radius: 15px;
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     }
 
     /* "Verse of the Day" heading */
     h1 {
-      font-size: 2.0rem;
-      color: #000000;
+      font-size: 1.8rem;
+      color: #4b0082; /* Indigo color */
       margin-bottom: 1rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     /* Verse text */
     p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin: 0.5rem 0;
     }
 
     /* Reference text */
     .reference {
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #000080; /* Navy text color */
-    }
-
-    /* Verse container with border */
-    #verse-container {
-      border: 2px solid #4b0082; /* Indigo border */
-      padding: 20px;
-      border-radius: 10px;
-      background-color: #ffffff; /* White background for verse box */
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     }
 
     /* Error message */
     .error {
       color: red;
-      font-size: 1rem;
+      font-size: 0.9rem;
       margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <h1>Verse of the Day</h1>
-  <div id="verse-container">
+  <div id="widget-container">
+    <h1>Verse of the Day</h1>
     <p id="verse">Loading...</p>
     <p id="reference" class="reference"></p>
     <p id="error" class="error"></p>
