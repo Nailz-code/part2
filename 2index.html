@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verse of the Day</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+    .reference {
+      font-weight: bold;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Verse of the Day</h1>
+  <p id="verse">Loading...</p>
+  <p id="reference" class="reference"></p>
+  <p id="error" class="error"></p>
+  <script src="script.js"></script>
+</body>
+</html>
