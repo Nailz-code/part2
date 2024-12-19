@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verse of the Day</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #4A90E2;
+    }
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .reference {
+      font-weight: bold;
+    }
+    .error {
+      color: red;
+    }
+    /* Add border to the entire widget content */
+    #content {
+      border: 2px solid #4A90E2; /* Light blue border */
+      border-radius: 10px; /* Rounded corners */
+      padding: 20px;
+      background-color: #ffffff; /* White background inside the border */
+      display: inline-block; /* Center the content neatly */
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h1>Verse of the Day</h1>
+    <p id="verse">Loading...</p>
+    <p id="reference" class="reference"></p>
+    <p id="error" class="error"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
